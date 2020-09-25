@@ -6,13 +6,13 @@ function get_num_files {
 #	echo $listing
 }
 get_num_files
-echo "Enter your guess: How many files in the current director?"
+echo "Enter your guess: How many files in the current directory?"
 read response
 echo "You entered: $response"
 
 	if [[ $response -eq $listing ]]
 	then
-		echo "Congratulations, you are correct!"
+		echo "Congratulations, you've guessed correctly!!"
 #		echo "End program"
 	else
 		if [[ $response -lt $listing ]]
